@@ -1,0 +1,112 @@
+# -------------------------------
+# Core numerical & data handling
+# -------------------------------
+numpy==2.2.4
+pandas==2.2.3
+scipy==1.15.2
+joblib==1.4.2
+statsmodels==0.14.6
+polars=1.38.1
+
+# -------------------------------
+# Machine learning & modeling
+# -------------------------------
+scikit-learn==1.6.1
+imbalanced-learn==0.13.0
+xgboost==3.0.0
+lightgbm==4.6.0
+catboost==1.2.8
+shap==0.47.1
+
+# -------------------------------
+# Deep learning (GPU support)
+# -------------------------------
+torch==2.6.0
+torchvision==0.21.0
+triton==3.2.0
+pynvml==12.0.0
+
+# -------------------------------
+# Transformers & NLP
+# -------------------------------
+transformers==4.50.1
+tokenizers==0.21.1
+nltk==3.9.1
+regex==2024.11.6
+
+# -------------------------------
+# Experiment tracking & logging
+# -------------------------------
+mlflow==3.1.1
+psutil==7.0.0
+tqdm==4.67.1
+python-dotenv==1.1.0
+PyYAML==6.0.2
+
+# -------------------------------
+# Visualization & reporting
+# -------------------------------
+matplotlib==3.10.1
+seaborn==0.13.2
+plotly==6.0.1
+altair==5.5.0
+pillow==11.0.0
+vl-convert-python==1.5.0
+
+# -------------------------------
+# Database / backend
+# -------------------------------
+SQLAlchemy==2.0.39
+psycopg2-binary==2.9.10
+
+# -------------------------------
+# Parallelization / distributed
+# -------------------------------
+dask==2025.3.0
+distributed==2025.3.0
+fsspec==2025.3.0
+cloudpickle==3.1.1
+
+# -------------------------------
+# API & serving (optional)
+# -------------------------------
+fastapi==0.116.1
+uvicorn==0.35.0
+Flask==3.1.1
+gunicorn==23.0.0
+
+# -------------------------------
+# Jupyter / notebook support
+# -------------------------------
+jupyterlab==4.3.6
+ipykernel==6.29.5
+ipywidgets==8.1.5
+notebook==7.3.3
+
+# -------------------------------
+# Development & tooling
+# -------------------------------
+pathspec==0.12.1
+black==25.1.0
+pre_commit==4.2.0
+
+# -------------------------------
+# Dashboards / visualization apps
+# -------------------------------
+streamlit==1.44.1
+graphviz==0.20.3
+
+# -------------------------------
+# Security / networking
+# -------------------------------
+requests==2.32.3
+urllib3==2.3.0
+idna==3.10
+certifi==2025.1.31
+
+# -------------------------------
+# Optional scientific tools
+# -------------------------------
+pynndescent==0.5.13
+umap-learn==0.5.7
+sympy==1.13.1
