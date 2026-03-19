@@ -1,36 +1,36 @@
-# Project compendium template
+# README
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Purpose of the Study
 
-## A compendium of code, data, and author's manuscript accompanying the manuscript:
+This project is a feasibility study using MIMIC-IV v3.1, a de-identified electronic health record (EHR) dataset (~10GB across multiple tables), to analyze inpatient Type 2 Diabetes (T2DM) practice patterns.
 
-#### TBD
+We use EHR orders as a proxy for clinical care and practice patterns, and derive orderset phenotypes using:
 
+Latent Dirichlet Allocation (LDA)
+Clustering approaches
 
-## Overview
-This repository is organized as a reproducible research compendium. Future updates to this compendium will include a Dockerfile and Binder Container
+We then explore relationships between these derived phenotypes and clinical outcomes, such as length of stay (LOS), using appropriate statistical models (e.g., Gamma GLM).
 
-## File Organization
+# Dependencies
+Install all required dependencies before running the pipeline:
 
-    analysis/
-    |
-    ├── logs/
-    │   └── log.md          # log of any progress or relevant information
-    |
-    ├── figures/            # location of the figures produced for the manuscript
-    |
-    ├── data/
-    |   ├── rawData/        # data obtained from elsewhere
-    │   └── derivedData/    # data generated from rawData/ and scripts.*
-    |   
-    └── supplementaryMaterials/
-        ├── supplementaryFigures/     
-        |                   # supplementary figures for the main manuscript
-        └── supplementaryTables/      
-                            # supplementary tables for the main manuscript 
-    
-      src                   # scripts to run in the following order (also see associated README.md)
-        └── script.*        # hypothetical script used to wrangle the raw data, produce figures, analyses, and supplementary materials
+> pip install -r requirements.txt
 
-        
+# How to Run
+Run the full pipeline with:
 
+> python3 mimic_iv_pipeline.py
+
+# This script will:
+
+Process raw MIMIC-IV data
+
+Apply cohort selection and filtering
+
+Generate order-based representations
+
+Derive phenotypes (LDA)
+
+Perform exploratory outcome analysis
+
+Produce output files
