@@ -1,20 +1,32 @@
-# README for Scripts used in TBD
+# README
 
-## Overview 
-Scripts used for manuscript: TBD
+# Purpose of the Study
+Project in a Nutshell
 
-***
+This project is a feasibility study using MIMIC-IV v3.1, a de-identified electronic health record (EHR) dataset (~10GB across multiple tables), to analyze inpatient Type 2 Diabetes (T2DM) practice patterns.
 
-## Purpose of the study 
-### To do some science 
+We use EHR orders as a proxy for clinical care and practice patterns, and derive orderset phenotypes using:
 
+Latent Dirichlet Allocation (LDA)
+Clustering approaches
 
-***
+We then explore relationships between these derived phenotypes and clinical outcomes, such as length of stay (LOS), using appropriate statistical models (e.g., Gamma GLM).
 
-## Dependencies
-##### The run order for the scripts: 
-1. Script.R - Hypothetical R script used to wrangle the raw data, produce figures, analyses, and supplementary materials
-##### The script "Script.R" is executable so long as all data are loaded into the environment
-##### Several packages/libraries are required, so be certain to install this package before running any other code.
+# Dependencies
+Install all required dependencies before running the pipeline:
 
-***
+> pip install -r requirements.txt
+
+# How to Run
+Run the full pipeline with:
+
+> python3 mimic_iv_pipeline.py
+
+# This script will:
+
+Process raw MIMIC-IV data
+Apply cohort selection and filtering
+Generate order-based representations
+Derive phenotypes (LDA)
+Perform exploratory outcome analysis
+Produce output files
