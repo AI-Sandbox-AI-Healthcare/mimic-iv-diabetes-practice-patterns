@@ -1,7 +1,6 @@
 # README
 
 # Purpose of the Study
-Project in a Nutshell
 
 This project is a feasibility study using MIMIC-IV v3.1, a de-identified electronic health record (EHR) dataset (~10GB across multiple tables), to analyze inpatient Type 2 Diabetes (T2DM) practice patterns.
 
@@ -25,8 +24,13 @@ Run the full pipeline with:
 # This script will:
 
 Process raw MIMIC-IV data
+
 Apply cohort selection and filtering
+
 Generate order-based representations
+
 Derive phenotypes (LDA)
+
 Perform exploratory outcome analysis
+
 Produce output files
